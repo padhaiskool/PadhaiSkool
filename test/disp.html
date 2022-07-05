@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      li {
+        padding: 10px;
+        border: solid;
+        border-radius: 10px;
+        background-color: rgb(92, 189, 245);
+        list-style: none;
+        font-size: 20px;
+        color: white;
+      }
+      a {
+        text-decoration: none;
+      }
+      .head h2 {
+        padding: 10px;
+      }
+      .menu {
+        padding: 10px;
+        background-color: aliceblue;
+      }
+      .paper {
+        padding: 10px;
+        position: relative;
+        top: 42px;
+        left: 33px;
+        width: 880px;
+      }
+      .ans {
+        margin: 5px;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .opthead p {
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 500;
+      }
+      .num1 {
+        display: flex;
+      }
+      .num1 p {
+        padding: 17px;
+        background-color: rgb(185, 238, 238);
+        margin: 4px;
+        border: solid;
+        border-radius: 50%;
+      }
+
+      .btncircle{
+        padding: 17px;
+        background-color: rgb(185, 238, 238);
+        margin: 4px;
+        border: solid;
+        border-radius: 50%;
+        cursor: pointer;
+        }
+      .num1 a {
+        text-decoration: none;
+        color: black;
+      }
+      .paper p {
+        padding: 9px;
+        font-size: 19px;
+      }
+      .middle {
+        display: flex;
+        justify-content: space-between;
+      }
+      .options {
+        position: relative;
+        right: 54px;
+        top: 43px;
+      }
+      .ans input[type="radio"] {
+        width: 7%;
+        height: 23px;
+        border: 0px;
+        margin: 7px;
+      }
+      .image {
+        text-align: center;
+        font-size: 20px;
+      }
+      img {
+        border-radius: 50%;
+        width: auto;
+        height: 118px;
+      }
+
+      
+      .btn {
+        width: 149px;
+        height: 41px;
+        border-radius: 11px;
+        background-color: rgb(95, 156, 4);
+        color: white;
+        font-weight: 900;
+      }
+      .button {
+        position: relative;
+        top: 98px;
+      }
+      .b {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .modal {
+        overflow: hidden;
+        top: 100px;
+        left: 100px;
+      }
+      #count {
+        margin-right: 120px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h2>Cs Academy Mock Test</h2>
+      <hr />
+      <div class="menu">
+        <h2>Section</h2>
+        <ul>
+          <li>Computer Science - 1</li>
+          <a href="exmocktest1.html">test</a>
+          <!-- <li id="count"></li> -->
+        </ul>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="paper">
+        <p style="color: red">Questions Type : Multiple Choice Question</p>
+        <hr />
+        <p>
+          <b
+            >Question no.
+            <p class="no"></p
+          ></b>
+        </p>
+        <hr />
+        <p class="question"></p>
+        <div class="ans">
+          <div class="ans">
+            <div>1. <label id="option1" for="1"> </label></div>
+            
+          </div>
+
+          <div class="ans">
+            <div>2. <label id="option2" for="2"> </label></div>
+            
+          </div>
+
+          <div class="ans">
+            <div>3. <label id="option3" for="3"> </label></div>
+            
+          </div>
+
+          <div class="ans">
+            <div>4. <label id="option4" for="4"> </label></div>
+            
+          </div>
+          <div class="ans">
+            <p>correct answer</p>
+            <label id="ansid" for="5"> </label>
+          </div>
+
+          <br />
+          <hr />
+          <br />
+          <center>
+            <!-- <button style="cursor: pointer" class="btn" id="submit">
+              Submit
+            </button> -->
+          </center>
+          <br />
+          <hr />
+        </div>
+      </div>
+
+      <div class="options">
+        <div class="image">
+          <img src="/img/avatar.png" alt="" />
+          <p>Name : Candidate </p>
+        </div>
+        <br />
+        <hr />
+        <div class="opthead">
+          <!-- <div id="count"></div> -->
+          <p>Question No.</p>
+          <div class="num">
+            <div class="num1">
+              <!-- <p class="no0">01</p> -->
+              <button class="no0 btncircle" id="0" onclick=fungetidofButton(this.id); >01</button>
+              <!-- <p class="no1">02</p> -->
+              <button class="no1 btncircle" id="1" onclick=fungetidofButton(this.id) >02</button>
+              <!-- <p class="no2">03</p> -->
+              <button class="no2 btncircle" id="2" onclick=fungetidofButton(this.id) >03</button>
+              <!-- <p class="no3">04</p> -->
+              <button class="no3 btncircle" id="3" onclick=fungetidofButton(this.id) >04</button>
+              <!-- <p class="no4">05</p> -->
+              <button class="no4 btncircle" id="4" onclick=fungetidofButton(this.id) >05</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no5">06</p> -->
+              <button class="no5 btncircle" id="5" onclick=fungetidofButton(this.id) >06</button>
+              <!-- <p class="no6">07</p> -->
+              <button class="no6 btncircle" id="6" onclick=fungetidofButton(this.id) >07</button>
+              <!-- <p class="no7">08</p> -->
+              <button class="no7 btncircle" id="7" onclick=fungetidofButton(this.id) >08</button>
+              <!-- <p class="no8">09</p> -->
+              <button class="no8 btncircle" id="8" onclick=fungetidofButton(this.id) >09</button>
+              <!-- <p class="no9">10</p> -->
+              <button class="no9 btncircle" id="9" onclick=fungetidofButton(this.id) >10</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no10">11</p> -->
+              <button class="no10 btncircle" id="10" onclick=fungetidofButton(this.id) >11</button>
+              <!-- <p class="no11">12</p> -->
+              <button class="no11 btncircle" id="11" onclick=fungetidofButton(this.id) >12</button>
+              <!-- <p class="no12">13</p> -->
+              <button class="no12 btncircle" id="12" onclick=fungetidofButton(this.id) >13</button>
+              <!-- <p class="no13">14</p> -->
+              <button class="no13 btncircle" id="13" onclick=fungetidofButton(this.id) >14</button>
+              <!-- <p class="no14">15</p> -->
+              <button class="no14 btncircle" id="14" onclick=fungetidofButton(this.id) >15</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no15">16</p> -->
+              <button class="no15 btncircle" id="15" onclick=fungetidofButton(this.id) >16</button>
+              <!-- <p class="no16">17</p> -->
+              <button class="no16 btncircle" id="16" onclick=fungetidofButton(this.id) >17</button>
+              <!-- <p class="no17">18</p> -->
+              <button class="no17 btncircle" id="17" onclick=fungetidofButton(this.id) >18</button>
+              <!-- <p class="no18">19</p> -->
+              <button class="no18 btncircle" id="18" onclick=fungetidofButton(this.id) >19</button>
+              <!-- <p class="no19">20</p> -->
+              <button class="no19 btncircle" id="19" onclick=fungetidofButton(this.id) >20</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no20">21</p> -->
+              <button class="no20 btncircle" id="20" onclick=fungetidofButton(this.id) >21</button>
+              <!-- <p class="no21">22</p> -->
+              <button class="no21 btncircle" id="21" onclick=fungetidofButton(this.id) >22</button>
+              <!-- <p class="no22">23</p> -->
+              <button class="no22 btncircle" id="22" onclick=fungetidofButton(this.id) >23</button>
+              <!-- <p class="no23">24</p> -->
+              <button class="no23 btncircle" id="23" onclick=fungetidofButton(this.id) >24</button>
+              <!-- <p class="no24">25</p> -->
+              <button class="no24 btncircle" id="24" onclick=fungetidofButton(this.id) >25</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- open modal -->
+    <div class="modal-overlay">
+      <div class="modalcontainer">
+        <div class="content">
+          <div class="contentHead">
+            <h3
+              style="
+                padding-top: 39px;
+                font-size: 21px;
+                font-family: sans-serif;
+              "
+            >
+              Result Section
+            </h3>
+            <img src="../img/avatar.png" alt="syllabus" />
+          </div>
+          <div
+            class="list"
+            style="font-size: 20px; padding: 20px; font-family: sans-serif"
+          >
+            <p>
+              <b>marks obtained</b>
+            </p>
+            <p class="marks">marks</p>
+            <b><p class="suggetion"></p></b>
+          </div>
+          <a href="../test.html"
+            ><button class="btn" style="background-color: rgb(36, 194, 247)">
+              Back to Dashboard
+            </button></a
+          >
+          <a href="disp.html"
+          ><button class="btn" style="background-color: rgb(36, 194, 247)">
+            show result
+          </button></a
+        >
+        </div>
+      </div>
+    </div>
+
+    <div class="div">
+      <h2>Message</h2>
+      <img src="/img/oops.jpeg" alt="image" />
+      <p>
+        please start Your mock test in deskstop mode or on laptop or deskstop .
+      </p>
+    </div>
+
+    <style>
+      .div {
+        visibility: hidden;
+      }
+      
+      @media only screen and (max-width: 1100px) {
+        .options{
+          display: none;
+        }
+        .demo{
+        background-color: white;
+        padding: 40px;
+        margin: 10px;
+        margin-left: 27px;
+        margin-right: 473px;
+        display: flex;
+        flex-direction: column;
+        }
+        /* .div {
+          background-color: rgb(120, 255, 42);
+          top: 20px;
+          left: 0px;
+          width: auto;
+          margin: auto;
+          padding: 100px;
+          text-align: center;
+          position: relative;
+          font-size: 20px;
+          visibility: visible;
+        } 
+        .head {
+          display: none;
+        }
+        .middle {
+          display: none;
+        }
+        .option {
+          display: none;
+        }
+        .modal-overlay,
+        footer {
+          display: none;
+        }*/
+      }
+      .contentHead {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(73, 166, 233, 0.5);
+        display: grid;
+        place-items: center;
+        transition: var(--transition);
+        visibility: hidden;
+        z-index: 10;
+      }
+      .open-modal {
+        visibility: visible;
+      }
+
+      .modalcontainer {
+        background-color: white;
+        padding: 40px;
+        margin: 10px;
+        margin-left: 464px;
+        margin-right: 473px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .modal-overlay .content {
+        margin: 2px;
+        padding: 15px;
+        padding-top: 0;
+        margin-bottom: 0;
+        width: 300px;
+        height: auto;
+        text-align: center;
+      }
+
+      .close-btn {
+        background: none;
+        font-size: 30px;
+        border: none;
+        float: right;
+        font-weight: 200;
+      }
+
+      .close-btn:hover {
+        cursor: pointer;
+      }
+    </style>
+  </body>
+  <script src="exmocktest1.js"></script>
+</html>

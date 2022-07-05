@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RESULT</title>
+    <style>
+      .Box {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        height: 250px;
+        padding-bottom: 8%;
+      }
+      .yellow {
+        background-color: rgb(245, 245, 24);
+        width: 300px;
+        margin-right: 1%;
+        box-shadow: 5px 10px 18px #888888;
+        padding: 3%;
+      }
+      .red {
+        background-color: rgb(224, 43, 43);
+        width: 300px;
+        margin-right: 1%;
+        /* box-shadow: 10px 20px 50px #bdbdbd;*/
+        box-shadow: 5px 10px 18px #888888;
+        padding: 3%;
+      }
+      .blue {
+        background-color: rgb(45, 184, 240);
+        width: 300px;
+        box-shadow: 5px 10px 18px #888888;
+        padding: 3%;
+      }
+      .green {
+        background-color: rgb(9, 175, 9);
+        width: 300px;
+        margin-left: 10%;
+        margin-right: 1%;
+        box-shadow: 5px 10px 18px #888888;
+        padding: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+
+       
+      <div class="head">
+        <center><h2>Result Section</h2></center>
+      </div>
+      <br /><br />
+
+      <div class="box" style="width:100%; display:flex; flex-direction:row;">
+        <div class="green" style="color: white">
+          <h2><b id="right"></b></h2>
+          <h4>Right Answer</h4>
+        </div>
+        <!-- <div class="red" style="color: white">
+          <h2><b id="wrong">10</b></h2>
+          <h4>WrongAnswer</h4>
+        </div> -->
+        <div class="yellow">
+          <h2><b id="total">10</b></h2>
+          <h4>Total questions</h4>
+        </div>
+        <div class="blue" style="color: white">
+          <h2><b id="percentage"> 10</b></h2>
+          <h4>Percentage</h4>
+        </div>
+      </div>
+
+      <div class="middle">
+        <center>
+          <br />
+          <br />
+          <h2>NOTE</h2>
+          <h3>When you given the exam then automatically your answer sheet downloaded on your device please check that file once.</h3>
+        </center>
+      </div>
+      <br><br><br>
+      <center><a href="../test.html"><button type="button" class="btn btn-primary btn-lg">Back to Dashboard</button></a></center>
+      <br /><br />
+      <div class="footer" style="background: white">
+        <center style="color: black; font: weight 400px; font-size: 20px">
+          <b><p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+            <a href="#" style="color:grey ;">Padhai Skool</a>.
+               </p></b><br />
+          <h5></h5>
+        </center>
+      </div>
+    </div>
+  </body>
+  <script src="result.js"></script>
+</html>
+
+
+
+

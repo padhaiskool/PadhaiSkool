@@ -1,0 +1,16 @@
+https://www.linkedin.com/in/aditya-sabde-12b68120b/
+
+https://www.youtube.com/channel/UCOpFnh41ZHE-ah4iHSoAp7g
+
+https://twitter.com/aditya_sabde
+
+
+ <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-222158248-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-222158248-1');
+</script>
