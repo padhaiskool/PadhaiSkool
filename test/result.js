@@ -9,5 +9,5 @@ let percentage = document.getElementById('percentage');
 
 right.innerHTML = v ;
 // wrong.innerHTML = t - v;
-total.innerHTML = t;
-percentage.innerHTML =Math.round(v*100/t)+"%";
+total.innerHTML = t-1;
+percentage.innerHTML =Math.round(v*100/t-1)+"%";
