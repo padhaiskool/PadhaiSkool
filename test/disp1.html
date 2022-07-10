@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Results</title>
+    <title>Mock Test</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript">
+      function preventBack(){window.history.forward();}
+      setTimeout("preventBack()",0);
+      window.onunload = function (){null};
+  </script>
+
+
     <style>
       * {
         padding: 0;
@@ -39,7 +49,7 @@
         position: relative;
         top: 42px;
         left: 33px;
-        width: 880px;
+        width: 700px;
       }
       .ans {
         margin: 5px;
@@ -61,7 +71,11 @@
         border: solid;
         border-radius: 50%;
       }
-
+      .num {
+    height: 335px;
+    overflow: scroll;
+    background-color: rgb(233, 228, 228);
+}
       .btncircle{
         padding: 17px;
         background-color: rgb(185, 238, 238);
@@ -80,6 +94,7 @@
       }
       .middle {
         display: flex;
+        
         justify-content: space-between;
       }
       .options {
@@ -97,10 +112,14 @@
         text-align: center;
         font-size: 20px;
       }
-      img {
+      #img1 {
         border-radius: 50%;
         width: auto;
         height: 118px;
+      }
+      #que-img{
+        width: 300px;
+        height: auto;
       }
 
       
@@ -132,16 +151,21 @@
       }
     </style>
   </head>
-  <body>
+<body>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
+  <!-- <body onclick="openFullscreen()" onload="openFullscreen();" onmouseover="openFullscreen();" oncontextmenu="openFullscreen()" ondrag="select()"> -->
     <div class="head">
       <h2>Cs Academy Mock Test</h2>
+      
+
+
       <hr />
       <div class="menu">
         <h2>Section</h2>
         <ul>
           <li>Computer Science - 1</li>
-          <a href="exmocktest1.html">test</a>
-          <!-- <li id="count"></li> -->
+          <li id="count"></li>
         </ul>
       </div>
     </div>
@@ -157,53 +181,75 @@
         </p>
         <hr />
         <p class="question"></p>
+        <img id="que-img"/>
         <div class="ans">
           <div class="ans">
-            <div>1. <label id="option1" for="1"> </label></div>
-            
+            <input class="input" type="radio" name="ans23" id="-1" value="1" />
+            <label id="option1" for="1"> </label>
           </div>
 
           <div class="ans">
-            <div>2. <label id="option2" for="2"> </label></div>
-            
+            <input class="input" type="radio" name="ans23" id="-2" value="2" />
+            <label id="option2" for="2"> </label>
           </div>
 
           <div class="ans">
-            <div>3. <label id="option3" for="3"> </label></div>
-            
+            <input class="input" type="radio" name="ans23" id="-3" value="3"  />
+            <label id="option3" for="3"> </label>
           </div>
 
           <div class="ans">
-            <div>4. <label id="option4" for="4"> </label></div>
-            
+            <input class="input" type="radio" name="ans23" id="-4" value="4" />
+            <label id="option4" for="4"> </label>
           </div>
-          <div class="ans">
-            <p>correct answer</p>
-            <label id="ansid" for="5"> </label>
-          </div>
-
+          <!-- <div>
+            <input type="text" id="txtName" placeholder="Enter your name" />
+          </div> -->
           <br />
           <hr />
           <br />
           <center>
-            <!-- <button style="cursor: pointer" class="btn" id="submit">
-              Submit
-            </button> -->
+            <button style="cursor: pointer" class="submitbtn btn" onclick="saveFile()" >
+              confirm
+            </button>
+            <!-- <div>
+              <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+            </div>
+            <div>
+              <input type="button" id="bt" value="Save data to file" onclick="saveFile1()" />
+            </div> -->
           </center>
           <br />
           <hr />
+
+<!-- final submit exam -->
+          <br />
+          <hr />
+          <br />
+          <center>
+            <a href="result.html">
+              <button style="cursor: pointer" class="submitexambtn btn" onclick="end()">
+                Over the Exam
+              </button>
+             </a> 
+          </center>
+          <br />
+          <hr />
+
+
         </div>
       </div>
 
       <div class="options">
         <div class="image">
-          <img src="/img/avatar.png" alt="" />
+          <img src="/img/avatar.png" alt=""  id="img1"/>
           <p>Name : Candidate </p>
         </div>
         <br />
         <hr />
         <div class="opthead">
           <!-- <div id="count"></div> -->
+        
           <p>Question No.</p>
           <div class="num">
             <div class="num1">
@@ -266,6 +312,66 @@
               <!-- <p class="no24">25</p> -->
               <button class="no24 btncircle" id="24" onclick=fungetidofButton(this.id) >25</button>
             </div>
+            <div class="num1">
+              <!-- <p class="no0">01</p> -->
+              <button class="no0 btncircle" id="26" onclick=fungetidofButton(this.id); >26</button>
+              <!-- <p class="no1">02</p> -->
+              <button class="no1 btncircle" id="27" onclick=fungetidofButton(this.id) >27</button>
+              <!-- <p class="no2">03</p> -->
+              <button class="no2 btncircle" id="28" onclick=fungetidofButton(this.id) >28</button>
+              <!-- <p class="no3">04</p> -->
+              <button class="no3 btncircle" id="29" onclick=fungetidofButton(this.id) >29</button>
+              <!-- <p class="no4">05</p> -->
+              <button class="no4 btncircle" id="30" onclick=fungetidofButton(this.id) >30</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no5">06</p> -->
+              <button class="no5 btncircle" id="31" onclick=fungetidofButton(this.id) >31</button>
+              <!-- <p class="no6">07</p> -->
+              <button class="no6 btncircle" id="32" onclick=fungetidofButton(this.id) >32</button>
+              <!-- <p class="no7">08</p> -->
+              <button class="no7 btncircle" id="33" onclick=fungetidofButton(this.id) >33</button>
+              <!-- <p class="no8">09</p> -->
+              <button class="no8 btncircle" id="34" onclick=fungetidofButton(this.id) >34</button>
+              <!-- <p class="no9">10</p> -->
+              <button class="no9 btncircle" id="35" onclick=fungetidofButton(this.id) >35</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no10">11</p> -->
+              <button class="no10 btncircle" id="36" onclick=fungetidofButton(this.id) >36</button>
+              <!-- <p class="no11">12</p> -->
+              <button class="no11 btncircle" id="37" onclick=fungetidofButton(this.id) >37</button>
+              <!-- <p class="no12">13</p> -->
+              <button class="no12 btncircle" id="38" onclick=fungetidofButton(this.id) >38</button>
+              <!-- <p class="no13">14</p> -->
+              <button class="no13 btncircle" id="39" onclick=fungetidofButton(this.id) >39</button>
+              <!-- <p class="no14">15</p> -->
+              <button class="no14 btncircle" id="40" onclick=fungetidofButton(this.id) >40</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no15">16</p> -->
+              <button class="no15 btncircle" id="41" onclick=fungetidofButton(this.id) >41</button>
+              <!-- <p class="no16">17</p> -->
+              <button class="no16 btncircle" id="42" onclick=fungetidofButton(this.id) >42</button>
+              <!-- <p class="no17">18</p> -->
+              <button class="no17 btncircle" id="43" onclick=fungetidofButton(this.id) >43</button>
+              <!-- <p class="no18">19</p> -->
+              <button class="no18 btncircle" id="44" onclick=fungetidofButton(this.id) >44</button>
+              <!-- <p class="no19">20</p> -->
+              <button class="no19 btncircle" id="45" onclick=fungetidofButton(this.id) >45</button>
+            </div>
+            <div class="num1">
+              <!-- <p class="no20">21</p> -->
+              <button class="no20 btncircle" id="46" onclick=fungetidofButton(this.id) >46</button>
+              <!-- <p class="no21">22</p> -->
+              <button class="no21 btncircle" id="47" onclick=fungetidofButton(this.id) >47</button>
+              <!-- <p class="no22">23</p> -->
+              <button class="no22 btncircle" id="48" onclick=fungetidofButton(this.id) >48</button>
+              <!-- <p class="no23">24</p> -->
+              <button class="no23 btncircle" id="49" onclick=fungetidofButton(this.id) >49</button>
+              <!-- <p class="no24">25</p> -->
+              <button class="no24 btncircle" id="50" onclick=fungetidofButton(this.id) >50</button>
+            </div>
           </div>
         </div>
       </div>
@@ -301,8 +407,7 @@
             ><button class="btn" style="background-color: rgb(36, 194, 247)">
               Back to Dashboard
             </button></a
-          >
-          <a href="disp.html"
+          ><a href="disp.html"
           ><button class="btn" style="background-color: rgb(36, 194, 247)">
             show result
           </button></a
@@ -311,13 +416,6 @@
       </div>
     </div>
 
-    <div class="div">
-      <h2>Message</h2>
-      <img src="/img/oops.jpeg" alt="image" />
-      <p>
-        please start Your mock test in deskstop mode or on laptop or deskstop .
-      </p>
-    </div>
 
     <style>
       .div {
@@ -325,9 +423,7 @@
       }
       
       @media only screen and (max-width: 1100px) {
-        .options{
-          display: none;
-        }
+        
         .demo{
         background-color: white;
         padding: 40px;
@@ -336,6 +432,18 @@
         margin-right: 473px;
         display: flex;
         flex-direction: column;
+        }
+        .middle {
+          display: flex;
+          flex-direction: column;
+          padding-left: 80px;
+          font-size: 10px;
+
+        }
+        .paper{
+          position: initial;
+          margin-left: 0%;
+          width: 300px;
         }
         /* .div {
           background-color: rgb(120, 255, 42);
@@ -352,9 +460,7 @@
         .head {
           display: none;
         }
-        .middle {
-          display: none;
-        }
+        
         .option {
           display: none;
         }
@@ -409,13 +515,48 @@
         font-size: 30px;
         border: none;
         float: right;
-        /* font-weight: 200; */
+        font-weight: 200;
       }
 
       .close-btn:hover {
         cursor: pointer;
       }
     </style>
+    <script>
+      var elem = document.documentElement;
+      function openFullscreen() {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+          elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+          elem.msRequestFullscreen();
+        }
+      }
+      
+      function closeFullscreen() {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) { /* Safari */
+          document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) { /* IE11 */
+          document.msExitFullscreen();
+        }
+      }
+      function myFunction() {
+ 
+  window.location.href = "../test.html";
+}
+document.addEventListener("keydown", function(event) {
+    if(event.keyCode === 27){
+       //Esc key was pressed
+       console.log('esc');
+       window.location.href = '../test.html';
+
+   }
+});
+      </script>
   </body>
-  <script src="exmocktest1.js"></script>
+  <!-- <script src="exmocktest1.js"></script> -->
+  <script src="disp1.js"></script>
 </html>
