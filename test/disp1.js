@@ -2,482 +2,244 @@
 const data = [
 {
     id:"1",
-    question:" A sotne of mass 1kg is tied to a string 2m long and is rotated at constant speed of 40 ms^-1 in a vertical circle . The ratio of the tension at the top and the bottom is [Take g = 10ms^-2]",
-    src:"../img/avatar.png",
-    option1:"81/79",
-    option2:"79/81",
-    option3:"19/12",
-    option4:"12/19",
-    ansid:"2"
+    question:" The derivative of cos3^x w.r.t. sin3^x is (sin^3x = sin(cube)x )",
+    src:"",
+    option1:" - cot x ",
+    option2:" cot x ",
+    option3:"tan x ",
+    option4:"-tanx",
+    ansid:"1"
 }
 ,{
+    
     id:"2",
-    question:" Two coils have a mutual inductance of 0.01 H. The current in the first coil changes according to equation I = 5 sin 200πt. The maximum value of e.m.f induced in the second coil is",
-    src:"",
-    option1:"10 pi volt",
-    option2:"0.1 pi volt",
-    option3:"pi volt",
-    option4:"0.01 pi volt",
+    question:" ) Simplify (p ∨ q) ∧ (p∨ ∼ q)",
+    src:"../img/mathimg/2img.png",
+    option1:"p",
+    option2:"T",
+    option3:"F",
+    option4:"q",
     ansid:"1"
 },
 {
     id:"3",
-    question:"3 The radius of the earth and the radius of orbit around the sun are 6371 km and 149×106 km respectively.The order of magnitude of the diameter of the orbit is greater than that of earth by",
-    src:"../img/question.jpeg",
-    option1:"10^3",
-    option2:"10^2",
-    option3:"10^4",
-    option4:"10^5",
-    ansid:"3"
+    question:"Simplify the following circuit and find the boolean polynomial.",
+    src:"",
+    option1:" p ∨ (q ∧ r) ",
+    option2:"p ∧ (q ∨ r",
+    option3:"p ∨ (q ∨ r) ",
+    option4:"p ∧ (q ∧ r)",
+    ansid:"1"
 },
 {
     id:"4",
-    question:" 4 Two open pipes of different lengths and of same diameter in which the air column vibrates with fundamental frequencies 'n1', and 'n2' respectively. When both pipes are joined to form a single pipe, its fundamental frequency will be",
-    src:"../img/p1.jpeg",
-    option1:"(n1+n2)/n1n2",
-    option2:"n1n2/(2n2 + n1)",
-    option3:"(2n2 + n1)/n1n2",
-    option4:"n1n2/(n1+n2)",
-    ansid:"4"
+    question:" ∼ (∼ p → q) =?    ",
+    src:"",
+    option1:"p∧ ∼ q ",
+    option2:"∼ p ∧ q ",
+    option3:" ∼ p∧ ∼ q",
+    option4:"∼ p∨ ∼q",
+    ansid:"3"
 },{
     id:"5",
-    question:"If 'Cp' and 'Cv' are molar specific heats of an ideal gas at constant pressure and volume resp. If 'λ' is ration specific heats and 'R' is universal gas constant then 'Cp' is equal to",
-    src:"../img/p2.jpeg",
-    option1:"πy/(y-1)",
-    option2:"yR",
-    option3:"(1+y)/(1-y)",
-    option4:"R/(y-1)",
-    ansid:"1"
+    question:"Volume of the parallelopiped having vertices at O = (0, 0, 0), A = (2,−2, 1), B = (5, −4, 4), and C = (1, −2, 4) is",
+    src:"",
+    option1:" 5 cu unit",
+    option2:"10 cu. unit",
+    option3:"15 cu. unit",
+    option4:"20 cu. unit",
+    ansid:"2"
 },{
     id:"6",
-    question:"In a series LCR circuit R=300Ω ,L=0.9H,C=2µF , ω =1000rad/s. The impedance of the circuit is",
-    src:"../img/p3.jpeg",
-    option1:"5000",
-    option2:"13000",
-    option3:"4000",
-    option4:"9000",
+    question:"",
+    src:"../img/mathimg/6img.png",
+    option1:"0",
+    option2:"π/2",
+    option3:"π/4",
+    option4:"π",
     ansid:"1"
 },{
     id:"7",
-    question:" The quantity which does not vary periodically for a particle performing S.H.M. is",
+    question:"∫x log xdx is equal to ?",
     src:"",
-    option1:"Acceleration",
-    option2:"Total energy",
-    option3:"displacement",
-    option4:"velocity",
-    ansid:"2"
+    option1:"x^2/4(2 log x −1)+c",
+    option2:"x^2/2(2 log x −1)+c",
+    option3:"x^2/4(2 log x +1)+c",
+    option4:"x^2/2(2 log x +1)+c",
+    ansid:"1"
 },{
     id:"8",
-    question:"Which of the following combinations of the 7 identical capacitors each of 2µF gives a resultant capacitance of 10/11 µF ?",
-    src:"../img/p4.jpeg",
-    option1:"3 in parallel and 4 in series",
-    option2:"2 in parallel and 5 in series.",
-    option3:"4 in parallel and 3 in series.",
-    option4:"5 in parallel and 2 in series",
-    ansid:"4"
+    question:") If xy = tan^−1(xy) + cot^−1(xy) , then dy/dx is equal",
+    src:"",
+    option1:" y/x",
+    option2:"-(y/x)",
+    option3:"x/y",
+    option4:"-x/y",
+    ansid:"2"
 },{
     id:"9",
-    question:"In moving coil galvanometer, strong horse shoe magnet of concave shaped pole pieces is used to ",
-    src:"../img/p5.jpeg",
-    option1:" increase space for roatation of coil.",
-    option2:"reduce weight of galvanometer. ",
-    option3:"produce magnetic field which is parallel to plane of coil at any position",
-    option4:"make magnetic induction weak at the centre.",
+    question:"Find the derivative of e^x + e^y = e^x+y",
+    src:"",
+    option1:" -e^(x-y)",
+    option2:"e^(x-y) ",
+    option3:"-e^(y-x)",
+    option4:"e^(y-x)",
     ansid:"3"
 },{
     id:"10",
-    question:"Two identical wires of substances 'P' and 'Q' are subjected to equal stretching force along the length. If the elongation of 'Q' is more than that of 'P', then",
+    question:" If θ is the angle between the lines ax^2 + 2hxy + by^2 = 0 , then angle between x^2 + 2xy sec θ + y^2 = 0 is",
     src:"",
-    option1:"both P and Q are equally elastic.",
-    option2:"P is more elastic than Q.",
-    option3:"P is plastic and Q is elastic.",
-    option4:"P is plastic and Q is elastic. ",
-    ansid:"2"
+    option1:" θ",
+    option2:"2θ",
+    option3:" θ/2",
+    option4:" 3θ ",
+    ansid:"1"
 },{
     id:"11",
-    question:"In fundamental mode,the time required for the sound wave to reach upto the closed end of a pipe filled with air is 't' second .The frequency of vibration of air column is ",
-    src:"../img/avatar.png",
-    option1:"(2t)^-1",
-    option2:"4(t)^-1",
-    option3:"2(t)^-1",
-    option4:"(4t)^-1",
-    ansid:"4"
+    question:") If 4x − 3y + k = 0 touches the ellipse 5x^2 + 9y^2 = 45 , then k is equal to ",
+    src:"",
+    option1:" ±3√21 ",
+    option2:" 3√21",
+    option3:" -3√21",
+    option4:" 2√21",
+    ansid:"1"
 },{
     id:"12",
-    question:"Two small drops of mercury each of radius 'R' coalesce to form a large single drop. The ratio of the total surface energies before and after the change is",
-    src:"../img/sum2.jpeg",
-    option1:"2^(2/3) : 1",
-    option2:"sqrt(2):1",
-    option3:"2^(1/3):1",
-    option4:"2:1",
-    ansid:"3"
-},{
-    id:"13",
-    question:"If radius of the solid sphere is doubled by keeping its mass constant, the ratio of their moment of inertia about any of its diameter is ",
-    src:"../img/avatar.png",
-    option1:"1;8",
-    option2:"2:5",
-    option3:"2:3",
-    option4:"1:4",
-    ansid:"4"
-},{
-    id:"14",
-    question:"For a metallic wire, the ratio of voltage to corresponding current is",
-    src:"../img/avatar.png",
-    option1:"independent of temperature.      ",
-    src:"../img/avatar.png",
-    option2:"increases with rise in temperature.",
-    option3:"increases or decreases with rise in temperature depending upon the metal.",
-    option4:"decreases with rise in temperature",
+    question:") Form the differential equation of all family of 4 lines y = mx +4/m by eliminating the arbitrary m constant m is ",
+    src:"",
+    option1:"A",
+    option2:"B",
+    option3:"C",
+    option4:"D",
     ansid:"2"
 },{
+    id:"13",
+    question:"",
+    src:"../img/mathimg/13img.png",
+    option1:"A",
+    option2:"B",
+    option3:"C",
+    option4:"",
+    ansid:"1"
+},{
+    id:"14",
+    question:"General solution of the differential equation dy/dx=(x + y + 1)/(x + y− 1) is given by",
+    src:"",
+    option1:" x + y = log |x + y| + c ",
+    option2:"x − y = log |x + y| + c",
+    option3:"y = x + log |x + y| +c",
+    option4:"y = x log |x + y| + c",
+    ansid:"3"
+},{
     id:"15",
-    question:"In air, a charged soap bubble of radius 'R' breaks into 27 small soap bubbles of equal radius 'r'.Then the ratio of mechanical force acting per unit area of big soap bubble to that of a small soap bubble is",
-    src:"../img/avatar.png",
-    option1:"1/81",
-    option2:"3/1",
-    option3:"1/3",
-    option4:"9/1",
-    ansid:"4"
+    question:"",
+    src:"../img/mathimg/15img.png",
+    option1:"A",
+    option2:"B",
+    option3:"C",
+    option4:"D",
+    ansid:"2"
 },{
     id:"16",
-    question:"Two parallel conductors carrying unequal currents in the same direction _____",
-    src:"../img/avatar.png",
-    option1:"neither attract nor repel each other",
-    option2:"repel each other",
-    option3:"attract each other.",
-    option4:"will have rotational motion",
+    question:"",
+    src:"../img/mathimg/16img.png",
+    option1:"A",
+    option2:"B",
+    option3:"C",
+    option4:"D",
     ansid:"3"
 },{
     id:"17",
-    question:"A layer of atmosphere that reflects medium frequency radio waves which is ineffective during night, is",
-    src:"../img/avatar.png",
-    option1:"F layer",
-    option2:"E layer",
-    option3:"stratosphere",
-    option4:"thermosphere ",
-    ansid:"2"
+    question:"∫sin(log x) + cos(log x)dx is equal to",
+    src:"",
+    option1:"x cos(log x) + c",
+    option2:"cos(log x) + c",
+    option3:" x sin(log x) + c ",
+    option4:"sin(log x) + c",
+    ansid:"3"
 },{
     id:"18",
-    question:"A transverse wave is propagating on the string.The linear density of a vibrating string is 10-3 kg/m. The equation of the wave is Y = 0.05 sin(x+15t) where x and Y are in metre and time in second.The tension in the string is",
-    src:"../img/avatar.png",
-    option1:" 0.2 N",
-    option2:"0.250 N",
-    option3:"+. 0.225 N",
-    option4:"0.325 N",
+    question:"The maximum value of z = 9x + 13y subject to 2x + 3y <= 18, 2x + y <= 10, x >= 0, y >= 0 is",
+    src:"",
+    option1:" 130",
+    option2:"81",
+    option3:"79",
+    option4:"99",
     ansid:"3"
 },{
     id:"19",
-    question:" A particle executes the simple hormonic motion with an amplitude ' A '. The distance travelled by it in one periodic time is",
-    src:"../img/avatar.png",
-    option1:"A/2",
-    option2:"A ",
-    option3:"2A",
-    option4:"4A",
-    ansid:"4"
+    question:" Equation of the plane passing through (−2, 2, 2) and (2, −2, −2) and perpendicular to the plane 9x − 13y − 3z = 0 is",
+    src:"",
+    option1:"5x + 3y + 2z =0",
+    option2:"5x − 3y + 2z = 0 ",
+    option3:"5x − 3y − 2z = 0 ",
+    option4:"5x + 3y − 2z = 0",
+    ansid:"1"
 },{
     id:"20",
-    question:"A galvanometer has resistance of 100Ω and a current of 10mA produces full scale deflection in it. The resistance to be connected to it in series, to get a voltmeter of range 50 volt is",
-    src:"../img/avatar.png",
-    option1:"39000",
-    option2:"40000",
-    option3:"46000",
-    option4:"49000",
-    ansid:"4"
+    question:" From a group of 8 boys and 3 girls, a commitee of 5 members to be formed. Find the probability that 2 particular girls are included in the committe i",
+    src:"",
+    option1:"4/11 ",
+    option2:"2/11",
+    option3:"6/11",
+    option4:"8/11",
+    ansid:"2"
 },{
     id:"21",
-    question:"The angle made by orbital angular momentum of electron with the direction of the orbital magnetic moment is",
-    src:"../img/avatar.png",
-    option1:" 120^o",
-    option2:"60^o",
-    option3:"180^o",
-    option4:"90^o",
+    question:"",
+    src:"../img/mathimg/21img.png",
+    option1:"A",
+    option2:"B",
+    option3:"C",
+    option4:"D",
     ansid:"3"
 },{
     id:"22",
-    question:"The wave length of the first line in Balmer series in the hydrogen spectrum is 'λ'. What is the wavelength of the second line in the same series?",
-    src:"../img/avatar.png",
-    option1:"20/27 λ",
-    option2:"3/16 λ",
-    option3:"5/36 λ",
-    option4:"3/4 λ",
+    question:"The equation of motion of a particle moving along a straight line is s = 2t^2 − 9t^2 + 12t , where the units of s and t are centimetre and second. The acceleration of the particle will be zero after",
+    src:"",
+    option1:"3/2s",
+    option2:"2/3s",
+    option3:"1/2s",
+    option4:"1s",
     ansid:"1"
 },{
     id:"23",
-    question:"Work done in stretching a wire through 1mm is 2J. What amount of work will be done for elongating another wire of same material, with half the length and double the radius of cross section, by 1 mm?",
-    src:"../img/avatar.png",
-    option1:"2J ",
-    option2:"4J",
-    option3:"8J",
-    option4:"16J",
-    ansid:"4"
+    question:"Find dy/dx , if x = 2 cos θ − cos 2θ and y = 2 sin θ − sin 2θ .",
+    src:"",
+    option1:"tan(3θ/2)",
+    option2:"-tan(3θ/2)",
+    option3:"cot(3θ/2)",
+    option4:"-cot(3θ/2)",
+    ansid:"1"
 },{
     id:"24",
-    question:" A telescope has large diameter of the objective.Then its resolving power is ",
-    src:"../img/avatar.png",
-    option1:" independent of the diameter of the objective",
-    option2:"low",
-    option3:"zero",
-    option4:"high",
-    ansid:"4"
+    question:" Area bounded between the curve x^2 = y and the line y = 4x is",
+    src:"",
+    option1:" 32/2 sq.unit",
+    option2:"1/3 sq.unit",
+    option3:"8/3 sq.unit",
+    option4:"16/3sq.unit",
+    ansid:"1"
 },{
     id:"25",
-    question:"The dimensions of torque are same as that of",
-    src:"../img/avatar.png",
-    option1:" moment of  force.",
-    option2:"pressure",
-    option3:"acceleration.",
-    option4:"impulse.",
+    question:" If the equation given by hxy + 10x + 6y + 4 = 0 represents a pair of lines, then h is equal to",
+    src:"",
+    option1:"15",
+    option2:"30",
+    option3:"5",
+    option4:"10",
     ansid:"1"
 },{
     id:"26",
     question:"You Can Submit Your Test!",
-    src:"../img/avatar.png",
+    src:"",
     option1:"",
     option2:"",
     option3:"",
     option4:"",
     ansid:"5"
 },
-{
-    id:"27",
-    question:" A sotne of mass 1kg is tied to a string 2m long and is rotated at constant speed of 40 ms^-1 in a vertical circle . The ratio of the tension at the top and the bottom is [Take g = 10ms^-2]",
-    src:"../img/avatar.png",
-    option1:"81/79",
-    option2:"79/81",
-    option3:"19/12",
-    option4:"12/19",
-    ansid:"2"
-}
-,{
-    id:"28",
-    question:" Two coils have a mutual inductance of 0.01 H. The current in the first coil changes according to equation I = 5 sin 200πt. The maximum value of e.m.f induced in the second coil is",
-    src:"",
-    option1:"10 pi volt",
-    option2:"0.1 pi volt",
-    option3:"pi volt",
-    option4:"0.01 pi volt",
-    ansid:"1"
-},
-{
-    id:"29",
-    question:"3 The radius of the earth and the radius of orbit around the sun are 6371 km and 149×106 km respectively.The order of magnitude of the diameter of the orbit is greater than that of earth by",
-    src:"../img/question.jpeg",
-    option1:"10^3",
-    option2:"10^2",
-    option3:"10^4",
-    option4:"10^5",
-    ansid:"3"
-},
-{
-    id:"30",
-    question:" 4 Two open pipes of different lengths and of same diameter in which the air column vibrates with fundamental frequencies 'n1', and 'n2' respectively. When both pipes are joined to form a single pipe, its fundamental frequency will be",
-    src:"../img/p1.jpeg",
-    option1:"(n1+n2)/n1n2",
-    option2:"n1n2/(2n2 + n1)",
-    option3:"(2n2 + n1)/n1n2",
-    option4:"n1n2/(n1+n2)",
-    ansid:"4"
-},{
-    id:"31",
-    question:"If 'Cp' and 'Cv' are molar specific heats of an ideal gas at constant pressure and volume resp. If 'λ' is ration specific heats and 'R' is universal gas constant then 'Cp' is equal to",
-    src:"../img/p2.jpeg",
-    option1:"πy/(y-1)",
-    option2:"yR",
-    option3:"(1+y)/(1-y)",
-    option4:"R/(y-1)",
-    ansid:"1"
-},{
-    id:"32",
-    question:"In a series LCR circuit R=300Ω ,L=0.9H,C=2µF , ω =1000rad/s. The impedance of the circuit is",
-    src:"../img/p3.jpeg",
-    option1:"5000",
-    option2:"13000",
-    option3:"4000",
-    option4:"9000",
-    ansid:"1"
-},{
-    id:"33",
-    question:" The quantity which does not vary periodically for a particle performing S.H.M. is",
-    src:"",
-    option1:"Acceleration",
-    option2:"Total energy",
-    option3:"displacement",
-    option4:"velocity",
-    ansid:"2"
-},{
-    id:"34",
-    question:"Which of the following combinations of the 7 identical capacitors each of 2µF gives a resultant capacitance of 10/11 µF ?",
-    src:"../img/p4.jpeg",
-    option1:"3 in parallel and 4 in series",
-    option2:"2 in parallel and 5 in series.",
-    option3:"4 in parallel and 3 in series.",
-    option4:"5 in parallel and 2 in series",
-    ansid:"4"
-},{
-    id:"35",
-    question:"In moving coil galvanometer, strong horse shoe magnet of concave shaped pole pieces is used to ",
-    src:"../img/p5.jpeg",
-    option1:" increase space for roatation of coil.",
-    option2:"reduce weight of galvanometer. ",
-    option3:"produce magnetic field which is parallel to plane of coil at any position",
-    option4:"make magnetic induction weak at the centre.",
-    ansid:"3"
-},{
-    id:"36",
-    question:"Two identical wires of substances 'P' and 'Q' are subjected to equal stretching force along the length. If the elongation of 'Q' is more than that of 'P', then",
-    src:"",
-    option1:"both P and Q are equally elastic.",
-    option2:"P is more elastic than Q.",
-    option3:"P is plastic and Q is elastic.",
-    option4:"P is plastic and Q is elastic. ",
-    ansid:"2"
-},{
-    id:"37",
-    question:"In fundamental mode,the time required for the sound wave to reach upto the closed end of a pipe filled with air is 't' second .The frequency of vibration of air column is ",
-    src:"../img/avatar.png",
-    option1:"(2t)^-1",
-    option2:"4(t)^-1",
-    option3:"2(t)^-1",
-    option4:"(4t)^-1",
-    ansid:"4"
-},{
-    id:"38",
-    question:"Two small drops of mercury each of radius 'R' coalesce to form a large single drop. The ratio of the total surface energies before and after the change is",
-    src:"../img/sum2.jpeg",
-    option1:"2^(2/3) : 1",
-    option2:"sqrt(2):1",
-    option3:"2^(1/3):1",
-    option4:"2:1",
-    ansid:"3"
-},{
-    id:"39",
-    question:"If radius of the solid sphere is doubled by keeping its mass constant, the ratio of their moment of inertia about any of its diameter is ",
-    src:"../img/avatar.png",
-    option1:"1;8",
-    option2:"2:5",
-    option3:"2:3",
-    option4:"1:4",
-    ansid:"4"
-},{
-    id:"40",
-    question:"For a metallic wire, the ratio of voltage to corresponding current is",
-    src:"../img/avatar.png",
-    option1:"independent of temperature.      ",
-    src:"../img/avatar.png",
-    option2:"increases with rise in temperature.",
-    option3:"increases or decreases with rise in temperature depending upon the metal.",
-    option4:"decreases with rise in temperature",
-    ansid:"2"
-},{
-    id:"41",
-    question:"In air, a charged soap bubble of radius 'R' breaks into 27 small soap bubbles of equal radius 'r'.Then the ratio of mechanical force acting per unit area of big soap bubble to that of a small soap bubble is",
-    src:"../img/avatar.png",
-    option1:"1/81",
-    option2:"3/1",
-    option3:"1/3",
-    option4:"9/1",
-    ansid:"4"
-},{
-    id:"42",
-    question:"Two parallel conductors carrying unequal currents in the same direction _____",
-    src:"../img/avatar.png",
-    option1:"neither attract nor repel each other",
-    option2:"repel each other",
-    option3:"attract each other.",
-    option4:"will have rotational motion",
-    ansid:"3"
-},{
-    id:"43",
-    question:"A layer of atmosphere that reflects medium frequency radio waves which is ineffective during night, is",
-    src:"../img/avatar.png",
-    option1:"F layer",
-    option2:"E layer",
-    option3:"stratosphere",
-    option4:"thermosphere ",
-    ansid:"2"
-},{
-    id:"44",
-    question:"A transverse wave is propagating on the string.The linear density of a vibrating string is 10-3 kg/m. The equation of the wave is Y = 0.05 sin(x+15t) where x and Y are in metre and time in second.The tension in the string is",
-    src:"../img/avatar.png",
-    option1:" 0.2 N",
-    option2:"0.250 N",
-    option3:"+. 0.225 N",
-    option4:"0.325 N",
-    ansid:"3"
-},{
-    id:"45",
-    question:" A particle executes the simple hormonic motion with an amplitude ' A '. The distance travelled by it in one periodic time is",
-    src:"../img/avatar.png",
-    option1:"A/2",
-    option2:"A ",
-    option3:"2A",
-    option4:"4A",
-    ansid:"4"
-},{
-    id:"46",
-    question:"A galvanometer has resistance of 100Ω and a current of 10mA produces full scale deflection in it. The resistance to be connected to it in series, to get a voltmeter of range 50 volt is",
-    src:"../img/avatar.png",
-    option1:"39000",
-    option2:"40000",
-    option3:"46000",
-    option4:"49000",
-    ansid:"4"
-},{
-    id:"47",
-    question:"The angle made by orbital angular momentum of electron with the direction of the orbital magnetic moment is",
-    src:"../img/avatar.png",
-    option1:" 120^o",
-    option2:"60^o",
-    option3:"180^o",
-    option4:"90^o",
-    ansid:"3"
-},{
-    id:"48",
-    question:"The wave length of the first line in Balmer series in the hydrogen spectrum is 'λ'. What is the wavelength of the second line in the same series?",
-    src:"../img/avatar.png",
-    option1:"20/27 λ",
-    option2:"3/16 λ",
-    option3:"5/36 λ",
-    option4:"3/4 λ",
-    ansid:"1"
-},{
-    id:"49",
-    question:"Work done in stretching a wire through 1mm is 2J. What amount of work will be done for elongating another wire of same material, with half the length and double the radius of cross section, by 1 mm?",
-    src:"../img/avatar.png",
-    option1:"2J ",
-    option2:"4J",
-    option3:"8J",
-    option4:"16J",
-    ansid:"4"
-},{
-    id:"50",
-    question:" A telescope has large diameter of the objective.Then its resolving power is ",
-    src:"../img/avatar.png",
-    option1:" independent of the diameter of the objective",
-    option2:"low",
-    option3:"zero",
-    option4:"high",
-    ansid:"4"
-},{
-    id:"51",
-    question:"The dimensions of torque are same as that of",
-    src:"../img/avatar.png",
-    option1:" moment of  force.",
-    option2:"pressure",
-    option3:"acceleration.",
-    option4:"impulse.",
-    ansid:"1"
-},{
-    id:"51",
-    question:"You Can Submit Your Test!",
-    src:"../img/avatar.png",
-    option1:"",
-    option2:"",
-    option3:"",
-    option4:"",
-    ansid:"5"
-}
+
 ];
 
 const no = document.querySelector(".no");
