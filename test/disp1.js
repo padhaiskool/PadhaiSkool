@@ -14,7 +14,7 @@ const data = [
     
     id:"2",
     question:" ) Simplify (p ∨ q) ∧ (p∨ ∼ q)",
-    src:"../img/mathimg/2img.png",
+    src:"mathimg/2img.png",
     option1:"p",
     option2:"T",
     option3:"F",
@@ -52,7 +52,7 @@ const data = [
 },{
     id:"6",
     question:"",
-    src:"../img/mathimg/6img.png",
+    src:"mathimg/6img.png",
     option1:"0",
     option2:"π/2",
     option3:"π/4",
@@ -115,7 +115,7 @@ const data = [
 },{
     id:"13",
     question:"",
-    src:"../img/mathimg/13img.png",
+    src:"mathimg/13img.png",
     option1:"A",
     option2:"B",
     option3:"C",
@@ -133,7 +133,7 @@ const data = [
 },{
     id:"15",
     question:"",
-    src:"../img/mathimg/15img.png",
+    src:"mathimg/15img.png",
     option1:"A",
     option2:"B",
     option3:"C",
@@ -142,7 +142,7 @@ const data = [
 },{
     id:"16",
     question:"",
-    src:"../img/mathimg/16img.png",
+    src:"mathimg/16img.png",
     option1:"A",
     option2:"B",
     option3:"C",
@@ -187,7 +187,7 @@ const data = [
 },{
     id:"21",
     question:"",
-    src:"../img/mathimg/21img.png",
+    src:"mathimg/21img.png",
     option1:"A",
     option2:"B",
     option3:"C",
