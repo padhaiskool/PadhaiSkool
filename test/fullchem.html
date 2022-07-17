@@ -1,5 +1,3 @@
-<!-- // this is a standard template copy this template and paste in another page -->
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,14 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
     <script type="text/javascript">
-      function preventBack() {
-        window.history.forward();
-      }
-      setTimeout("preventBack()", 0);
-      window.onunload = function () {
-        null;
-      };
-    </script>
+      function preventBack(){window.history.forward();}
+      setTimeout("preventBack()",0);
+      window.onunload = function (){null};
+  </script>
+
 
     <style>
       * {
@@ -77,18 +72,18 @@
         border-radius: 50%;
       }
       .num {
-        height: 335px;
-        overflow: scroll;
-        background-color: rgb(254, 251, 251);
-      }
-      .btncircle {
+    height: 335px;
+    overflow: scroll;
+    background-color: rgb(233, 228, 228);
+}
+      .btncircle{
         padding: 17px;
         background-color: rgb(185, 238, 238);
         margin: 4px;
         border: solid;
         border-radius: 50%;
         cursor: pointer;
-      }
+        }
       .num1 a {
         text-decoration: none;
         color: black;
@@ -99,7 +94,7 @@
       }
       .middle {
         display: flex;
-
+        
         justify-content: space-between;
       }
       .options {
@@ -122,11 +117,12 @@
         width: auto;
         height: 118px;
       }
-      #que-img {
+      #que-img{
         width: 300px;
         height: auto;
       }
 
+      
       .btn {
         width: 149px;
         height: 41px;
@@ -155,18 +151,20 @@
       }
     </style>
   </head>
-  <body>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<body>
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-    <!-- <body onclick="openFullscreen()" onload="openFullscreen();" onmouseover="openFullscreen();" oncontextmenu="openFullscreen()" ondrag="select()"> -->
+  <!-- <body onclick="openFullscreen()" onload="openFullscreen();" onmouseover="openFullscreen();" oncontextmenu="openFullscreen()" ondrag="select()"> -->
     <div class="head">
       <h2>Cs Academy Mock Test</h2>
+      
+
 
       <hr />
       <div class="menu">
         <h2>Section</h2>
         <ul>
-          <li>Physics</li>
+          <li>Chemistry</li>
           <li id="count"></li>
         </ul>
       </div>
@@ -183,7 +181,7 @@
         </p>
         <hr />
         <p class="question"></p>
-        <img id="que-img" />
+        <img id="que-img"/>
         <div class="ans">
           <div class="ans">
             <input class="input" type="radio" name="ans23" id="-1" value="1" />
@@ -196,7 +194,7 @@
           </div>
 
           <div class="ans">
-            <input class="input" type="radio" name="ans23" id="-3" value="3" />
+            <input class="input" type="radio" name="ans23" id="-3" value="3"  />
             <label id="option3" for="3"> </label>
           </div>
 
@@ -211,11 +209,7 @@
           <hr />
           <br />
           <center>
-            <button
-              style="cursor: pointer"
-              class="submitbtn btn"
-              onclick="saveFile()"
-            >
+            <button style="cursor: pointer" class="submitbtn btn" onclick="saveFile()" >
               confirm
             </button>
             <!-- <div>
@@ -228,260 +222,141 @@
           <br />
           <hr />
 
-          <!-- final submit exam -->
+<!-- final submit exam -->
           <br />
           <hr />
           <br />
           <center>
             <a href="result.html">
-              <button
-                style="cursor: pointer"
-                class="submitexambtn btn"
-                onclick="end()"
-              >
+              <button style="cursor: pointer" class="submitexambtn btn" onclick="end()">
                 Over the Exam
               </button>
-            </a>
+             </a> 
           </center>
           <br />
           <hr />
+
+
         </div>
       </div>
 
       <div class="options">
         <div class="image">
-          <img src="/img/avatar.png" alt="" id="img1" />
-          <p>Name : Candidate</p>
+          <img src="img/avatar.png" alt=""  id="img1"/>
+          <p>Name : Candidate </p>
         </div>
         <br />
         <hr />
         <div class="opthead">
           <!-- <div id="count"></div> -->
-
+        
           <p>Question No.</p>
           <div class="num">
             <div class="num1">
               <!-- <p class="no0">01</p> -->
-              <button
-                class="no0 btncircle"
-                id="0"
-                onclick="fungetidofButton(this.id);"
-              >
-                01
-              </button>
+              <button class="no0 btncircle" id="0" onclick=fungetidofButton(this.id); >01</button>
               <!-- <p class="no1">02</p> -->
-              <button
-                class="no1 btncircle"
-                id="1"
-                onclick="fungetidofButton(this.id)"
-              >
-                02
-              </button>
+              <button class="no1 btncircle" id="1" onclick=fungetidofButton(this.id) >02</button>
               <!-- <p class="no2">03</p> -->
-              <button
-                class="no2 btncircle"
-                id="2"
-                onclick="fungetidofButton(this.id)"
-              >
-                03
-              </button>
+              <button class="no2 btncircle" id="2" onclick=fungetidofButton(this.id) >03</button>
               <!-- <p class="no3">04</p> -->
-              <button
-                class="no3 btncircle"
-                id="3"
-                onclick="fungetidofButton(this.id)"
-              >
-                04
-              </button>
+              <button class="no3 btncircle" id="3" onclick=fungetidofButton(this.id) >04</button>
               <!-- <p class="no4">05</p> -->
-              <button
-                class="no4 btncircle"
-                id="4"
-                onclick="fungetidofButton(this.id)"
-              >
-                05
-              </button>
+              <button class="no4 btncircle" id="4" onclick=fungetidofButton(this.id) >05</button>
             </div>
             <div class="num1">
               <!-- <p class="no5">06</p> -->
-              <button
-                class="no5 btncircle"
-                id="5"
-                onclick="fungetidofButton(this.id)"
-              >
-                06
-              </button>
+              <button class="no5 btncircle" id="5" onclick=fungetidofButton(this.id) >06</button>
               <!-- <p class="no6">07</p> -->
-              <button
-                class="no6 btncircle"
-                id="6"
-                onclick="fungetidofButton(this.id)"
-              >
-                07
-              </button>
+              <button class="no6 btncircle" id="6" onclick=fungetidofButton(this.id) >07</button>
               <!-- <p class="no7">08</p> -->
-              <button
-                class="no7 btncircle"
-                id="7"
-                onclick="fungetidofButton(this.id)"
-              >
-                08
-              </button>
+              <button class="no7 btncircle" id="7" onclick=fungetidofButton(this.id) >08</button>
               <!-- <p class="no8">09</p> -->
-              <button
-                class="no8 btncircle"
-                id="8"
-                onclick="fungetidofButton(this.id)"
-              >
-                09
-              </button>
+              <button class="no8 btncircle" id="8" onclick=fungetidofButton(this.id) >09</button>
               <!-- <p class="no9">10</p> -->
-              <button
-                class="no9 btncircle"
-                id="9"
-                onclick="fungetidofButton(this.id)"
-              >
-                10
-              </button>
+              <button class="no9 btncircle" id="9" onclick=fungetidofButton(this.id) >10</button>
             </div>
             <div class="num1">
               <!-- <p class="no10">11</p> -->
-              <button
-                class="no10 btncircle"
-                id="10"
-                onclick="fungetidofButton(this.id)"
-              >
-                11
-              </button>
+              <button class="no10 btncircle" id="10" onclick=fungetidofButton(this.id) >11</button>
               <!-- <p class="no11">12</p> -->
-              <button
-                class="no11 btncircle"
-                id="11"
-                onclick="fungetidofButton(this.id)"
-              >
-                12
-              </button>
+              <button class="no11 btncircle" id="11" onclick=fungetidofButton(this.id) >12</button>
               <!-- <p class="no12">13</p> -->
-              <button
-                class="no12 btncircle"
-                id="12"
-                onclick="fungetidofButton(this.id)"
-              >
-                13
-              </button>
+              <button class="no12 btncircle" id="12" onclick=fungetidofButton(this.id) >13</button>
               <!-- <p class="no13">14</p> -->
-              <button
-                class="no13 btncircle"
-                id="13"
-                onclick="fungetidofButton(this.id)"
-              >
-                14
-              </button>
+              <button class="no13 btncircle" id="13" onclick=fungetidofButton(this.id) >14</button>
               <!-- <p class="no14">15</p> -->
-              <button
-                class="no14 btncircle"
-                id="14"
-                onclick="fungetidofButton(this.id)"
-              >
-                15
-              </button>
+              <button class="no14 btncircle" id="14" onclick=fungetidofButton(this.id) >15</button>
             </div>
             <div class="num1">
               <!-- <p class="no15">16</p> -->
-              <button
-                class="no15 btncircle"
-                id="15"
-                onclick="fungetidofButton(this.id)"
-              >
-                16
-              </button>
+              <button class="no15 btncircle" id="15" onclick=fungetidofButton(this.id) >16</button>
               <!-- <p class="no16">17</p> -->
-              <button
-                class="no16 btncircle"
-                id="16"
-                onclick="fungetidofButton(this.id)"
-              >
-                17
-              </button>
+              <button class="no16 btncircle" id="16" onclick=fungetidofButton(this.id) >17</button>
               <!-- <p class="no17">18</p> -->
-              <button
-                class="no17 btncircle"
-                id="17"
-                onclick="fungetidofButton(this.id)"
-              >
-                18
-              </button>
+              <button class="no17 btncircle" id="17" onclick=fungetidofButton(this.id) >18</button>
               <!-- <p class="no18">19</p> -->
-              <button
-                class="no18 btncircle"
-                id="18"
-                onclick="fungetidofButton(this.id)"
-              >
-                19
-              </button>
+              <button class="no18 btncircle" id="18" onclick=fungetidofButton(this.id) >19</button>
               <!-- <p class="no19">20</p> -->
-              <button
-                class="no19 btncircle"
-                id="19"
-                onclick="fungetidofButton(this.id)"
-              >
-                20
-              </button>
+              <button class="no19 btncircle" id="19" onclick=fungetidofButton(this.id) >20</button>
             </div>
             <div class="num1">
               <!-- <p class="no20">21</p> -->
-              <button
-                class="no20 btncircle"
-                id="20"
-                onclick="fungetidofButton(this.id)"
-              >
-                21
-              </button>
+              <button class="no20 btncircle" id="20" onclick=fungetidofButton(this.id) >21</button>
               <!-- <p class="no21">22</p> -->
-              <button
-                class="no21 btncircle"
-                id="21"
-                onclick="fungetidofButton(this.id)"
-              >
-                22
-              </button>
+              <button class="no21 btncircle" id="21" onclick=fungetidofButton(this.id) >22</button>
               <!-- <p class="no22">23</p> -->
-              <button
-                class="no22 btncircle"
-                id="22"
-                onclick="fungetidofButton(this.id)"
-              >
-                23
-              </button>
+              <button class="no22 btncircle" id="22" onclick=fungetidofButton(this.id) >23</button>
               <!-- <p class="no23">24</p> -->
-              <button
-                class="no23 btncircle"
-                id="23"
-                onclick="fungetidofButton(this.id)"
-              >
-                24
-              </button>
+              <button class="no23 btncircle" id="23" onclick=fungetidofButton(this.id) >24</button>
               <!-- <p class="no24">25</p> -->
-              <button
-                class="no24 btncircle"
-                id="24"
-                onclick="fungetidofButton(this.id)"
-              >
-                25
-              </button>
+              <button class="no24 btncircle" id="24" onclick=fungetidofButton(this.id) >25</button>
             </div>
             <div class="num1">
               <!-- <p class="no0">01</p> -->
-              <button
-                class="no0 btncircle"
-                id="26"
-                onclick="fungetidofButton(this.id);"
-              >
-                26
-              </button>
-              <!-- <p class="no1">02</p> -->
-            </div>
+              <button class="no25 btncircle" id="25" onclick=fungetidofButton(this.id); >26</button>
+              <button class="no26 btncircle" id="26" onclick=fungetidofButton(this.id); >27</button>
+              <button class="no27 btncircle" id="27" onclick=fungetidofButton(this.id); >28</button>
+              <button class="no28 btncircle" id="28" onclick=fungetidofButton(this.id); >29</button>
+              <button class="no29 btncircle" id="29" onclick=fungetidofButton(this.id); >30</button>
+              
           </div>
+          <div class="num1">
+            <!-- <p class="no0">01</p> -->
+            <button class="no30 btncircle" id="30" onclick=fungetidofButton(this.id); >31</button>
+            <button class="no31 btncircle" id="31" onclick=fungetidofButton(this.id); >32</button>
+            <button class="no32 btncircle" id="32" onclick=fungetidofButton(this.id); >33</button>
+            <button class="no33 btncircle" id="33" onclick=fungetidofButton(this.id); >34</button>
+            <button class="no34 btncircle" id="34" onclick=fungetidofButton(this.id); >35</button>
+            
+        </div>
+        <div class="num1">
+            <!-- <p class="no0">01</p> -->
+            <button class="no35 btncircle" id="35" onclick=fungetidofButton(this.id); >36</button>
+            <button class="no36 btncircle" id="36" onclick=fungetidofButton(this.id); >37</button>
+            <button class="no37 btncircle" id="37" onclick=fungetidofButton(this.id); >38</button>
+            <button class="no38 btncircle" id="38" onclick=fungetidofButton(this.id); >39</button>
+            <button class="no39 btncircle" id="39" onclick=fungetidofButton(this.id); >40</button>
+            
+        </div>
+        <div class="num1">
+            <!-- <p class="no0">01</p> -->
+            <button class="no40 btncircle" id="40" onclick=fungetidofButton(this.id); >41</button>
+            <button class="no41 btncircle" id="41" onclick=fungetidofButton(this.id); >42</button>
+            <button class="no42 btncircle" id="42" onclick=fungetidofButton(this.id); >43</button>
+            <button class="no43 btncircle" id="43" onclick=fungetidofButton(this.id); >44</button>
+            <button class="no44 btncircle" id="44" onclick=fungetidofButton(this.id); >45</button>
+            
+        </div>
+        <div class="num1">
+            <!-- <p class="no0">01</p> -->
+            <button class="no45 btncircle" id="45" onclick=fungetidofButton(this.id); >46</button>
+            <button class="no46 btncircle" id="46" onclick=fungetidofButton(this.id); >47</button>
+            <button class="no47 btncircle" id="47" onclick=fungetidofButton(this.id); >48</button>
+            <button class="no48 btncircle" id="48" onclick=fungetidofButton(this.id); >49</button>
+            <button class="no49 btncircle" id="49" onclick=fungetidofButton(this.id); >50</button>
+            
+        </div>
         </div>
       </div>
     </div>
@@ -516,35 +391,40 @@
             ><button class="btn" style="background-color: rgb(36, 194, 247)">
               Back to Dashboard
             </button></a
-          >
+          ><a href="disp.html"
+          ><button class="btn" style="background-color: rgb(36, 194, 247)">
+            show result
+          </button></a
+        >
         </div>
       </div>
     </div>
 
-  
 
     <style>
       .div {
         visibility: hidden;
       }
-
+      
       @media only screen and (max-width: 1100px) {
-        .demo {
-          background-color: white;
-          padding: 40px;
-          margin: 10px;
-          margin-left: 27px;
-          margin-right: 473px;
-          display: flex;
-          flex-direction: column;
+        
+        .demo{
+        background-color: white;
+        padding: 40px;
+        margin: 10px;
+        margin-left: 27px;
+        margin-right: 473px;
+        display: flex;
+        flex-direction: column;
         }
         .middle {
           display: flex;
           flex-direction: column;
           padding-left: 80px;
           font-size: 10px;
+
         }
-        .paper {
+        .paper{
           position: initial;
           margin-left: 0%;
           width: 300px;
@@ -631,38 +511,36 @@
       function openFullscreen() {
         if (elem.requestFullscreen) {
           elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) {
-          /* Safari */
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
           elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-          /* IE11 */
+        } else if (elem.msRequestFullscreen) { /* IE11 */
           elem.msRequestFullscreen();
         }
       }
-
+      
       function closeFullscreen() {
         if (document.exitFullscreen) {
           document.exitFullscreen();
-        } else if (document.webkitExitFullscreen) {
-          /* Safari */
+        } else if (document.webkitExitFullscreen) { /* Safari */
           document.webkitExitFullscreen();
-        } else if (document.msExitFullscreen) {
-          /* IE11 */
+        } else if (document.msExitFullscreen) { /* IE11 */
           document.msExitFullscreen();
         }
       }
       function myFunction() {
-        window.location.href = "../test.html";
-      }
-      document.addEventListener("keydown", function (event) {
-        if (event.keyCode === 27) {
-          //Esc key was pressed
-          console.log("esc");
-          window.location.href = "../test.html";
-        }
-      });
-    </script>
+ 
+  window.location.href = "../test.html";
+}
+document.addEventListener("keydown", function(event) {
+    if(event.keyCode === 27){
+       //Esc key was pressed
+       console.log('esc');
+       window.location.href = '../test.html';
+
+   }
+});
+      </script>
   </body>
-  <script src="exmocktest1.js"></script>
-  <!-- <script src="disp1.js"></script> -->
+  <!-- <script src="exmocktest1.js"></script> -->
+  <script src="fullchem.js"></script>
 </html>
