@@ -883,7 +883,7 @@ const data = [
     
     
     
-    var count = 30;
+    var count = 5344;
     let sec = 60;
     var interval = setInterval(function(){
     let time = Math.trunc(count / 60);
