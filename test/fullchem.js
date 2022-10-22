@@ -611,7 +611,7 @@ input.forEach((current)=>{
     if(current.checked){
         ans = -current.id;
         // console.log("ans " + ans);
-        saveFile1(ans,cur);
+        // saveFile1(ans,cur);
     }
 })
 // if(document.getElementById('1').checked){
