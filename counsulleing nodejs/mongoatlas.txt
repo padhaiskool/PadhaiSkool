@@ -1,4 +1,0 @@
-45.127.198.61
-
-
-mongodb+srv://adityasabde:<password>@cluster0.zhgi0bu.mongodb.net/?retryWrites=true&w=majority
